@@ -1,5 +1,7 @@
-[![Tree-sitter][tree-sitter badge]][tree-sitter link]&nbsp;
-[![Rust][rust badge]][rust link]
+![Project status][status badge]&nbsp;
+[![Alan version][alan badge]][alan link]&nbsp;
+[![Tree-sitter version][tree-sitter badge]][tree-sitter link]&nbsp;
+[![Rust version][rust badge]][rust link]
 
 # Tree-sitter ALAN
 
@@ -114,6 +116,16 @@ You can also download a [precompiled Tree-sitter CLI binary][TS-CLI binary] and 
     + [alan-docs] — ALAN documentation repository.
 
 <!-- MarkdownTOC:excluded -->
+### ALAN BNF
+
+For insights into ALAN's BNF grammar, see the following files at the ALAN repository (tag `v3.0beta8`):
+
+- [`alan.atg`][alan.atg]
+- [`alan.coco`][alan.coco]
+- [`alan.g`][alan.g]
+
+
+<!-- MarkdownTOC:excluded -->
 ## Tree-sitter Links
 
 - [Tree-sitter website]
@@ -146,6 +158,12 @@ You can also download a [precompiled Tree-sitter CLI binary][TS-CLI binary] and 
 [alan]: https://github.com/alan-if/alan "ALAN compiler and interpreter source repository"
 [alan-docs]: https://github.com/alan-if/alan-docs "ALAN Documentation repository"
 
+<!-- ALAN sources: BNF -->
+
+[alan.atg]: https://github.com/alan-if/alan/blob/v3.0beta8/compiler/alan.atg "View upstream source file from tag v3.0beta8"
+[alan.coco]: https://github.com/alan-if/alan/blob/v3.0beta8/compiler/alan.coco "View upstream source file from tag v3.0beta8"
+[alan.g]: https://github.com/alan-if/alan/blob/v3.0beta8/compiler/alan.g "View upstream source file from tag v3.0beta8"
+
 <!-- Tree-sitter -->
 
 [Tree-sitter]: https://tree-sitter.github.io "Visit Tree-sitter website"
@@ -176,9 +194,11 @@ You can also download a [precompiled Tree-sitter CLI binary][TS-CLI binary] and 
 [Atom editor]: https://atom.io "Atom editor's website"
 [Atom grammars]: https://flight-manual.atom.io/hacking-atom/sections/creating-a-grammar/ "Learn more about Atom support for Tree-sitter generated grammars"
 
-
 <!-- badges -->
 
+[status badge]: https://img.shields.io/badge/status-Alpha-red "The project is in Alpha development"
+[alan badge]: https://img.shields.io/badge/ALAN-3.0beta8-yellow
+[alan link]: https://www.alanif.se/download-alan-v3/development-kits/development-kits-3-0beta8 "Built around Alan 3.0beta8"
 [tree-sitter badge]: https://img.shields.io/badge/Tree--sitter-0.20.4-yellow
 [tree-sitter link]: https://github.com/tree-sitter/tree-sitter "Requires Tree-sitter CLI"
 [rust badge]: https://img.shields.io/badge/Rust-1.58.1-yellow
