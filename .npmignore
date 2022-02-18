@@ -1,0 +1,10 @@
+####################################################
+#  Tree-sitter language for Alan-IF:               #
+#  https://github.com/tajmone/tree-sitter-alan-if  #
+####################################################
+
+/test
+/examples
+/build
+/script
+/target
