@@ -1,0 +1,15 @@
+[
+  {
+    "type": "source_file",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "comment",
+    "named": true
+  },
+  {
+    "type": "hello",
+    "named": false
+  }
+]
