@@ -1,0 +1,28 @@
+{
+  "name": "tree-sitter-alan-if",
+  "version": "0.1.0",
+  "description": "Alan-IF grammar for Tree-sitter",
+  "main": "bindings/node",
+  "author": "Tristano Ajmone",
+  "license": "MIT",
+  "keywords": [
+    "Tree-sitter",
+    "Alan-IF",
+    "parser",
+    "lexer"
+  ],
+  "dependencies": {
+    "nan": "^2.14.0"
+  },
+  "devDependencies": {
+    "tree-sitter-cli": "^0.20.4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tajmone/tree-sitter-alan-if.git"
+  },
+  "bugs": {
+    "url": "https://github.com/tajmone/tree-sitter-alan-if/issues"
+  },
+  "homepage": "https://github.com/tajmone/tree-sitter-alan-if"
+}
