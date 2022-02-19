@@ -6,8 +6,9 @@
   "author": "Tristano Ajmone",
   "license": "MIT",
   "keywords": [
-    "Tree-sitter",
-    "Alan-IF",
+    "tree-sitter",
+    "alan-if",
+    "alan",
     "parser",
     "lexer"
   ],
@@ -24,5 +25,14 @@
   "bugs": {
     "url": "https://github.com/tajmone/tree-sitter-alan-if/issues"
   },
-  "homepage": "https://github.com/tajmone/tree-sitter-alan-if"
+  "homepage": "https://github.com/tajmone/tree-sitter-alan-if",
+  "tree-sitter": [
+    {
+      "scope": "source.alan-if",
+      "file-types": [
+        "alan",
+        "i"
+      ]
+    }
+  ]
 }
