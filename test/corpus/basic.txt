@@ -1,0 +1,23 @@
+=============
+Line Comments
+=============
+
+-- comment
+
+---
+
+(adventure
+  (comment))
+
+=============
+Options
+=============
+
+options
+  debug.
+
+---
+
+(adventure
+  (options_kwd)
+  (option_debug))

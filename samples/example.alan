@@ -1,6 +1,8 @@
--- Single line comment
-Options
-  Debug. -- Enable debugging.
+
+options
+  debug. -- Enable debugging.
   Language Swedish.
   No pack.
   Width 128.
+
+-- Single line comment

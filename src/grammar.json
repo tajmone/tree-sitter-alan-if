@@ -1,9 +1,55 @@
 {
   "name": "alan_if",
   "rules": {
-    "source_file": {
-      "type": "STRING",
-      "value": "hello"
+    "adventure": {
+      "type": "CHOICE",
+      "members": [
+        {
+          "type": "SYMBOL",
+          "name": "_options"
+        },
+        {
+          "type": "BLANK"
+        }
+      ]
+    },
+    "_options": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "SYMBOL",
+          "name": "options_kwd"
+        },
+        {
+          "type": "REPEAT1",
+          "content": {
+            "type": "CHOICE",
+            "members": [
+              {
+                "type": "SYMBOL",
+                "name": "option_debug"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "options_kwd": {
+      "type": "PATTERN",
+      "value": "options?"
+    },
+    "option_debug": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "PATTERN",
+          "value": "debug"
+        },
+        {
+          "type": "STRING",
+          "value": "."
+        }
+      ]
     },
     "comment": {
       "type": "TOKEN",
@@ -29,7 +75,7 @@
     },
     {
       "type": "PATTERN",
-      "value": "\\\\\\r?\\n"
+      "value": "\\r?\\n"
     },
     {
       "type": "SYMBOL",

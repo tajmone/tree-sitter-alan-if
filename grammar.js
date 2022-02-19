@@ -3,13 +3,26 @@ module.exports = grammar({
 
   extras: $ => [
     /\s/,
-    /\\\r?\n/,
+    /\r?\n/,
     $.comment
   ],
 
   rules: {
-    // TODO: add the actual grammar rules
-    source_file: $ => 'hello',
+    adventure: $ => optional($._options),
+
+    _options: $ => seq(
+      $.options_kwd,
+      repeat1(choice(
+        $.option_debug
+      ))
+    ),
+
+    options_kwd: $ => /options?/i,
+
+    option_debug: $ => seq(
+      /debug/i,
+      '.'
+    ),
 
     comment: $ => token(seq('--', /.*/))
 

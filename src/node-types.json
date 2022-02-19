@@ -1,15 +1,38 @@
 [
   {
-    "type": "source_file",
+    "type": "adventure",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": false,
+      "types": [
+        {
+          "type": "option_debug",
+          "named": true
+        },
+        {
+          "type": "options_kwd",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "option_debug",
     "named": true,
     "fields": {}
+  },
+  {
+    "type": ".",
+    "named": false
   },
   {
     "type": "comment",
     "named": true
   },
   {
-    "type": "hello",
-    "named": false
+    "type": "options_kwd",
+    "named": true
   }
 ]
