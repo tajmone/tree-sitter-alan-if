@@ -8,7 +8,10 @@ module.exports = grammar({
   ],
 
   rules: {
-    adventure: $ => optional($._options),
+    adventure: $ => seq(
+      optional($._options),
+      optional($.string),
+    ),
 
     _options: $ => seq(
       $.options_kwd,
@@ -23,6 +26,15 @@ module.exports = grammar({
       /debug/i,
       '.'
     ),
+
+    string: $ => seq(
+      '"',
+      repeat(choice(
+        token.immediate(prec(1, /[^\\"]+/))
+      )),
+      '"',
+    ),
+
 
     comment: $ => token(seq('--', /.*/))
 
