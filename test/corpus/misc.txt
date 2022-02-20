@@ -19,17 +19,3 @@ String
 
 (adventure
   (string))
-
-
-=============
-Options
-=============
-
-options
-  debug.
-
----
-
-(adventure
-  (options_kwd)
-  (option_debug))

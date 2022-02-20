@@ -28,6 +28,11 @@
     "fields": {}
   },
   {
+    "type": "options_kwd",
+    "named": true,
+    "fields": {}
+  },
+  {
     "type": "string",
     "named": true,
     "fields": {}
@@ -45,7 +50,15 @@
     "named": true
   },
   {
-    "type": "options_kwd",
-    "named": true
+    "type": "debug",
+    "named": false
+  },
+  {
+    "type": "option",
+    "named": false
+  },
+  {
+    "type": "options",
+    "named": false
   }
 ]

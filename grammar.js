@@ -20,10 +20,12 @@ module.exports = grammar({
       ))
     ),
 
-    options_kwd: $ => /options?/i,
+    options_kwd: $ => choice(
+      caseInsensitive('options'),
+      caseInsensitive('option')),
 
     option_debug: $ => seq(
-      /debug/i,
+      caseInsensitive('debug'),
       '.'
     ),
 
@@ -40,3 +42,19 @@ module.exports = grammar({
 
   }
 });
+
+/*
+  The caseInsensitive() function was taken from Matthew
+  Stadelman's Fortran grammar (MIT License):
+  https://github.com/stadelmanma/tree-sitter-fortran
+*/
+
+function caseInsensitive (keyword, aliasAsWord = true) {
+  let result = new RegExp(keyword
+    .split('')
+    .map(l => l !== l.toUpperCase() ? `[${l}${l.toUpperCase()}]` : l)
+    .join('')
+  )
+  if (aliasAsWord) result = alias(result, keyword)
+  return result
+}
